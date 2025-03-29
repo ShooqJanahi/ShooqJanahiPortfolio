@@ -9,8 +9,8 @@
 }
 
 :root {
-    --color-primary: rgb(21, 107, 212);
-    --color-primary-variant: rgba(21, 107, 212, 0.5);
+    --color-primary: #4b0082;
+    --color-primary-variant: #6819a4;
     --color-gray-0: #fff;
     --color-gray-50: #edecec;
     --color-gray-100: #e6e5e5;
@@ -69,6 +69,8 @@ body {
     color: var(--color-gray-800);
     user-select: none;
 }
+
+
 
 .container {
     width: var(--container-w-lg);
