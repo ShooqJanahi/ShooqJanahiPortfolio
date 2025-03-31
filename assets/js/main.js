@@ -109,7 +109,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
 
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
-    loop: true,
+    loop: false,   //change ti true if there is more recomadations
     grabCursor: true,
     spaceBetween: 48,
 

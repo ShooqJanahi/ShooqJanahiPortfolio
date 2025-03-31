@@ -494,23 +494,23 @@ img {
 }
 
 .skills__html {
-  width: 90%;
+  width: 100%;
 }
 
 .skills__css {
-  width: 80%;
+  width: 90%;
 }
 
 .skills__js {
-  width: 60%;
+  width: 86%;
 }
 
 .skills__react {
-  width: 85%;
+  width: 40%;
 }
 
 .skills__php {
-  width: 80%;
+  width: 90%;
 }
 
 .skills__node {
@@ -518,24 +518,42 @@ img {
 }
 
 .skills__firebase {
-  width: 90%;
+  width: 100%;
 }
+
+.skills__java {
+  width: 100%;
+}
+
+.skills__c_sharp {
+  width: 95%;
+}
+
 
 .skills__python {
   width: 55%;
 }
 
-.skills__figma {
-  width: 90%;
-}
-
-.skills__sketch {
+.skills__MySQL {
   width: 85%;
 }
 
-.skills__photoshop {
+.skills__SQLServer{
+  width: 95%;
+}
+
+.skills__MongoDB{
   width: 85%;
 }
+
+.skills__Flutter{
+  width: 60%;
+}
+
+.skills__Swift{
+  width: 75%;
+}
+
 
 .skills__close .skills__list {
   height: 0px;
@@ -622,6 +640,28 @@ img {
 .qualification__button.qualification__active {
   color: var(--first-color);
 }
+
+.qualification__credential {
+  font-size: 0.7rem;
+  color: #6A1B9A; /* light purple, adjust as needed */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.qualification__credential:hover {
+  text-decoration: underline;
+  color: #4A0072; /* darker purple on hover */
+}
+
+.qualification__credential i {
+  font-size: 0.9rem;
+}
+
+
+
 
 /*==================== SERVICES ====================*/
 .services__container {
@@ -849,6 +889,9 @@ img {
 .swiper-container .swiper-pagination-testimonial {
   bottom: 0;
 }
+
+
+
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
