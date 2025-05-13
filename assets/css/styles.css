@@ -554,6 +554,17 @@ img {
   width: 75%;
 }
 
+.skills__figma{
+  width: 95%;
+}
+
+.skills__balsamiq{
+  width: 100%;
+}
+
+.skills__EA{
+  width: 100%;
+}
 
 .skills__close .skills__list {
   height: 0px;
