@@ -580,6 +580,15 @@ img {
   transform: rotate(-180deg);
 }
 
+
+/* Scratch & Robotics bars */
+.skills__percentage.skills__scratch { width: 85%; }
+.skills__percentage.skills__robotics { width: 70%; }
+
+
+
+
+
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
   display: flex;
@@ -1119,6 +1128,14 @@ img {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+
+
+  .skills__container {
+    grid-template-columns: 1fr; /* one column instead of two */
+  }
+
+
   .qualification__sections {
     display: grid;
     grid-template-columns: .6fr;
