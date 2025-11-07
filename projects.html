@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects — Shooq Janahi</title>
+
+
+<!-- Base site styles & icons -->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<!-- Page-specific styles -->
+<link rel="stylesheet" href="assets/css/projects.css" />
+</head>
+<body>
+<!-- Reuse the same navbar as index.html -->
+<header class="header" id="header">
+<nav class="nav container">
+<a href="#" class="nav__logo">
+<img src="assets/img/Purpole_SJ.png" alt="SJ Logo" style="height:45px; vertical-align:middle; margin-right:8px;" />
+</a>
+
+
+<div class="nav__menu" id="nav-menu">
+<ul class="nav__list grid">
+<li class="nav__item"><a href="index.html#home" class="nav__link"><i class="uil uil-estate nav__icon"></i> Home</a></li>
+<li class="nav__item"><a href="index.html#about" class="nav__link"><i class="uil uil-user nav__icon"></i> About</a></li>
+<li class="nav__item"><a href="index.html#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i> Skills</a></li>
+<li class="nav__item"><a href="index.html#qualification" class="nav__link"><i class="uil uil-graduation-cap nav__icon"></i> Qualification</a></li>
+<li class="nav__item"><a href="projects.html" class="nav__link active-link"><i class="uil uil-scenery nav__icon"></i> Projects</a></li>
+<li class="nav__item"><a href="index.html#contact" class="nav__link"><i class="uil uil-message nav__icon"></i> Contact Me</a></li>
+</ul>
+<i class="uil uil-times nav__close" id="nav-close"></i>
+</div>
+
+
+<div class="nav__btns">
+<i class="uil uil-moon change-theme" id="theme-button"></i>
+<div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
+</div>
+</nav>
+</header>
+
+
+<main class="page container section">
+<header class="projects__header">
+  <h1 class="projects__title">Projects</h1>
+  <span class="projects__subtitle">Explore selected work. Click a card to open details or jump to external links.</span>
+
+  <!-- Search Input (Below subtitle) -->
+<div class="projects__search">
+  <i class="uil uil-search"></i>
+  <input id="projectSearch" type="search" placeholder="Search projects or tech..." />
+  <button id="projectClear" class="projects__clear" aria-label="Clear search" hidden>&times;</button>
+</div>
+
+</header>
+
+
+
+<div id="projectsGrid" class="projects__grid" aria-live="polite"></div>
+<div id="emptyState" class="empty" hidden>No projects found.</div>
+<section class="section" style="padding-top:0"></section>
+</main>
+
+<!-- Drawer for internal details -->
+<aside id="drawer" class="drawer" aria-hidden="true" role="dialog" aria-labelledby="drawerTitle">
+<div class="drawer__head">
+<h2 id="drawerTitle" class="drawer__title">Project</h2>
+<i id="drawerClose" class="uil uil-times drawer__close" aria-label="Close"></i>
+</div>
+<div class="drawer__content">
+<div class="detail__hero"><img id="detailHero" class="detail__img" alt="Project hero" /></div>
+<div class="detail__grid">
+<section class="detail__section">
+<h4>Description</h4>
+<p id="detailDesc"></p>
+<div class="project-card__actions" style="margin-top:1rem">
+<a id="detailPrimaryBtn" class="button button--flex" target="_blank" rel="noopener">Visit <i class="uil uil-external-link-alt button__icon"></i></a>
+<a id="detailRepoBtn" class="button button--flex is-ghost" target="_blank" rel="noopener"><i class="uil uil-github-alt" style="margin-right:.35rem"></i> GitHub</a>
+</div>
+</section>
+<aside class="detail__section">
+<h4>Tech Stack</h4>
+<div id="detailStack" class="stack"></div>
+<h4 style="margin-top:1rem">Details</h4>
+<ul id="detailMeta" class="about__list"></ul>
+</aside>
+</div>
+
+
+<section class="detail__section" style="margin-top:1.25rem">
+<h4>Preview Shots</h4>
+<div id="detailShots" class="detail__shots"></div>
+</section>
+</div>
+</aside>
+
+
+<!-- ==================== FOOTER (same as index) ==================== -->
+<footer class="footer">
+<div class="footer__bg">
+<div class="footer__container container grid">
+<div>
+<h1 class="footer__title">Shooq Janahi</h1>
+<span class="footer__subtitle">Software Developer</span>
+</div>
+<ul class="footer__links">
+<li><a href="projects.html#projects" class="footer__link">Projects</a></li>
+<li><a href="index.html#qualification" class="footer__link">Qualification</a></li>
+<li><a href="index.html#contact" class="footer__link">Contact Me</a></li>
+</ul>
+</div>
+<p class="footer__copy">&#169; Shooq Janahi. All right reserved</p>
+</div>
+</footer>
+
+
+<!--========== SCROLL TOP ==========-->
+<a href="#" class="scrollup" id="scroll-top"><i class="uil uil-arrow-up scrollup__icon"></i></a>
+
+
+<!-- Core scripts reused from index for nav/theme/swiper -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- Page script -->
+<script src="assets/js/projects.js"></script>
+</body>
+</html>

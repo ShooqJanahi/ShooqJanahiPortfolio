@@ -1,0 +1,148 @@
+/* spacing under the title */
+.projects__header{ margin-bottom:1.25rem; }
+.projects__title{ margin-bottom:.25rem; }
+.projects__subtitle{ display:block; margin-top:.25rem; }
+
+/* 3-up responsive grid */
+.projects__grid{
+  display:grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+   align-items: stretch;     
+}
+
+
+.projects__grid > article{
+  height: 100%;
+}
+
+/* card + drawer (unchanged from before) */
+.project-card { background: var(--container-color);
+   border-radius: 1rem; 
+   overflow:hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.06);
+   transition: transform .2s, box-shadow .2s; 
+   display:flex;
+   height: 100%;
+    flex-direction:column; 
+}
+.project-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,.12); }
+.project-card__thumb{
+  width:100%;
+  aspect-ratio:16/9;   /* identical visual window everywhere */
+  display:block;
+  object-fit:cover;    /* default: fill and crop gracefully */
+  object-position:center;
+  background:var(--container-color);
+}
+
+.project-card__thumb.thumb--contain{
+  object-fit:contain;     /* no cropping */
+  padding:12px;           /* gives equal breathing space */
+  background:var(--body-color);
+}
+
+.project-card__body {
+   padding: 1rem 1rem 1.25rem; 
+  display:flex; 
+  flex-direction:column; 
+  gap:.6em;
+   flex: 1;   
+ }
+.project-card__title { font-size: var(--h3-font-size); }
+.project-card__desc { color: var(--text-color-light); font-size: var(--small-font-size); line-height:1.45; }
+.project-card__tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .25rem;
+ min-height:36px;
+}
+
+.tag{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height:36px;  
+  padding: 0 .75rem;          /* consistent side padding */
+  border-radius:999px;      /* pill shape */
+  font-size: .8rem;           /* consistent text size */
+  line-height: 1;             /* prevents tall pills */
+  white-space: nowrap;        /* keep tags on one line */
+  background: var(--first-color-lighter);
+  color: var(--first-color);
+}
+.project-card__actions { 
+  margin-top:auto;
+    display: grid;
+    gap:.5rem; 
+    flex-wrap:wrap; 
+     grid-template-columns: 1fr 1fr;
+  }
+
+  
+.project-card__actions .button{
+  width: 100%;
+  justify-content: center;              /* text + icon centered */
+  height: 44px;                         /* consistent button height */
+  line-height: 44px;                    /* keeps vertical rhythm tight */
+}
+
+
+.button.is-ghost { background:transparent; border:1px solid var(--first-color); color:var(--first-color); }
+
+/* drawer */
+.drawer { position:fixed; inset:0 0 0 auto; width:min(860px,100%); transform:translateX(100%);
+  transition: transform .25s ease; background: var(--body-color); z-index: 9999; box-shadow:-10px 0 30px rgba(0,0,0,.2);
+  display:flex; flex-direction:column; max-height:100vh; }
+.drawer.open { transform: translateX(0); }
+.drawer__head { display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; border-bottom:1px solid rgba(0,0,0,.06); background: var(--container-color); }
+.drawer__title { font-size: var(--h2-font-size); }
+.drawer__close { cursor:pointer; font-size:1.4rem; }
+.drawer__content { overflow:auto; padding: 1rem 1.25rem 2rem; }
+.detail__hero { width:100%; border-radius:.75rem; overflow:hidden; margin-bottom:1rem; }
+.detail__img { width:100%; height:auto; display:block; }
+.detail__grid { display:grid; grid-template-columns: 1.25fr .75fr; gap:1.25rem; align-items:start; }
+@media (max-width: 900px){ .detail__grid { grid-template-columns: 1fr; } }
+.detail__section { background: var(--container-color); border-radius:.75rem; padding:1rem; }
+.detail__shots { display:grid; grid-template-columns: repeat(auto-fill, minmax(160px,1fr)); gap:.75rem; }
+.detail__shots img { width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:.5rem; }
+.empty { text-align:center; color: var(--text-color-light); padding:3rem 1rem; }
+
+/* Search bar under subtitle */
+.projects__search{
+  margin-top:.75rem;
+  display:flex; align-items:center; gap:.5rem;
+  background:var(--container-color);
+  border-radius:.75rem; padding:.5rem .75rem;
+  box-shadow:0 6px 16px rgba(0,0,0,.06);
+}
+
+.projects__search i{
+  font-size:1.15rem;
+  color:var(--text-color-light);
+}
+
+.projects__search input{
+  flex:1; border:none; background:transparent; color:var(--text-color);
+  font-size:var(--normal-font-size); outline:none;
+}
+
+.projects__clear{
+  border:none; background:transparent; cursor:pointer;
+  color:var(--text-color-light); font-size:1.25rem; line-height:1;
+}
+
+
+
+
+@media (max-width: 1024px){
+  .projects__grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 640px){
+  .projects__grid{ grid-template-columns: 1fr; }
+}
+
+@media (min-width: 1200px){
+  .project-card__thumb{ aspect-ratio: 16 / 9; }
+}
