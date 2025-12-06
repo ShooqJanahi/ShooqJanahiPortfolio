@@ -502,7 +502,7 @@ img {
 }
 
 .skills__js {
-  width: 86%;
+  width: 100%;
 }
 
 .skills__react {
@@ -531,7 +531,7 @@ img {
 
 
 .skills__python {
-  width: 40%;
+  width: 80%;
 }
 
 .skills__MySQL {
@@ -547,11 +547,11 @@ img {
 }
 
 .skills__Flutter{
-  width: 60%;
+  width: 100%;
 }
 
 .skills__angular {
-   width: 85%;
+   width: 100%;
    }
 
 
@@ -1162,6 +1162,52 @@ img {
   .section__subtitle {
     margin-bottom: 4rem;
   }
+
+  /* Tighter spacing in the Featured Projects section */
+.portfolio .section__subtitle {
+  margin-bottom: var(--mb-1);   /* was var(--mb-3) */
+}
+
+.portfolio__header {
+  margin-bottom: var(--mb-1-5); /* a bit smaller so slider comes closer */
+}
+
+
+/* Center the Featured Projects header area */
+.portfolio__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+ 
+}
+
+/* Keep same style but make sure it's centered */
+.section__view-all {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  white-space: nowrap;
+}
+
+/* Center "View all projects" and make it responsive */
+.portfolio .section__view-all {
+  display: flex;                 /* so icon + text stay together */
+  align-items: center;
+  justify-content: center;
+  width: max-content;            /* only as wide as its content */
+  margin: var(--mb-0-75) auto var(--mb-1-5);  /* auto centers horizontally */
+}
+
+/* Optional: slightly smaller on small screens */
+@media screen and (max-width: 568px) {
+  .portfolio .section__view-all {
+    font-size: var(--small-font-size);
+  }
+}
+
+
+
+
   .header {
     top: 0;
     bottom: initial;
