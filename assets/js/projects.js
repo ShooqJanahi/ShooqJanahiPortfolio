@@ -65,6 +65,34 @@ const PROJECTS = [
 }
 },
 
+{
+  id: "Credit-Card-Fraud-Detection",
+  title: "SupTech Fraud Monitoring Dashboard (Credit Card Transactions)",
+  subtitle: "Early-warning indicators • anomaly signals • interactive dashboard",
+  type: "Data Analytics / SupTech",
+  hero: "assets/img/projects/fraud-dashboard/hero.png", // change to your real image path
+  desc: "An interactive SupTech-style dashboard built to monitor transaction trends, detect suspicious patterns, and provide early-warning indicators. It summarizes fraud rate, total fraud counts, peak-risk periods, and monthly trends using structured aggregated data exported from Kaggle into JSON and visualized using Chart.js.",
+  stack: ["HTML", "CSS", "JavaScript", "Chart.js", "Python", "Pandas", "Kaggle"],
+  meta: [
+    { label: "What it shows", value: "KPIs, peak fraud month, monthly fraud rate & volume, alert samples" },
+    { label: "Data source", value: "Kaggle — Credit Card Transactions Fraud Detection Dataset" },
+    { label: "Method", value: "Python aggregation → JSON export → Web dashboard visualization" },
+    { label: "Focus", value: "Patterns, anomalies, risks, early-warning indicators" }
+  ],
+  // If you host it, put the live link here:
+  primaryLink: "YOUR_LIVE_URL_HERE",
+  primaryText: "Open Dashboard",
+  // If you have a repo, put it here:
+  repoLink: "YOUR_GITHUB_REPO_URL_HERE",
+  // Preview images shown inside the drawer:
+  shots: [
+    
+  ],
+  tags: ["dashboard", "suptech", "anomaly", "fraud", "early-warning", "analytics"]
+},
+
+
+
 
   {
     id: "shift-handover",
