@@ -120,8 +120,12 @@ const PROJECTS = [
     hero: "assets/img/Shift_Handover_Logo.png",
     thumbFit: "contain",                               
      tags: ["C#", "ASP.NET MVC", "SQL Server", "QuestPDF"],
-    detailsUrl: "https://github.com/ShooqJanahi/ShiftHandover#README",
+    
+     /*
+     detailsUrl: "https://github.com/ShooqJanahi/ShiftHandover#README",
     primaryLabel: "Details",
+*/
+
     repo: "https://github.com/ShooqJanahi/ShiftHandover",
     linkType: "external",
     createdAt: "2025-03",
