@@ -178,7 +178,7 @@ const PROJECTS = [
   tags: ["HTML","CSS","JavaScript","Chart.js","REST APIs"],
                    
   
-  detailsUrl: "https://shooqjanahi.github.io/CreditCardFraudDetectionDashboard/",     // e.g. GitHub Pages link
+  detailsUrl: "https://shooqjanahi.github.io/Bahrain-Air-Transport-Dashboard/",     // e.g. GitHub Pages link
   primaryLabel: "Demo",
  
   repo: "https://github.com/ShooqJanahi/Bahrain-Air-Transport-Dashboard",
